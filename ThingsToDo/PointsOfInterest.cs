@@ -6,11 +6,11 @@ namespace ThingsToDo
 {
     public class PointsOfInterest
     {
-        public int regionId;
+        public long regionId;
         public string regionName;
         public string regionNameLong;
-        public string latitude;
-        public string longitude;
+        public double latitude;
+        public double longitude;
         public string subClassification;
     }
 }

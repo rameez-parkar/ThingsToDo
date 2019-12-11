@@ -38,10 +38,17 @@ namespace ThingsToDo
 
         public void CreateTable(string tableName, string newTableInfo)
         {
-            command = new MySqlCommand("drop table "+ tableName, connection);
-            int noOfRowsAffected = command.ExecuteNonQuery();
-            command = new MySqlCommand(newTableInfo, connection);
-            noOfRowsAffected = command.ExecuteNonQuery();
+            try
+            {
+                command = new MySqlCommand(newTableInfo, connection);
+                int noOfRowsAffected = command.ExecuteNonQuery();
+            }
+            catch(Exception e)
+            {
+                DeleteTable(tableName);
+                command = new MySqlCommand(newTableInfo, connection);
+                int noOfRowsAffected = command.ExecuteNonQuery();
+            }
             Console.WriteLine("Created Table "+tableName);
         }
 
@@ -51,6 +58,12 @@ namespace ThingsToDo
             command = new MySqlCommand(insertCommand, connection);
             int noOfRowsAffected = command.ExecuteNonQuery();
             Console.WriteLine("Region ID : "+pointsOfInterest.regionId+" inserted!");
+        }
+
+        public void DeleteTable(string tableName)
+        {
+            command = new MySqlCommand("drop table " + tableName, connection);
+            int noOfRowsAffected = command.ExecuteNonQuery();
         }
     }
 }

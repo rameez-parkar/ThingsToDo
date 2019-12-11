@@ -17,18 +17,23 @@ namespace ThingsToDo
             this.dbHandler = dbHandler;
         }
 
-        public void ReadData()
+        public void ReadDataFromFile(string tableName)
         {
             using (StreamReader streamReader = File.OpenText(path))
             {
                 string row = "";
                 streamReader.ReadLine();
-                while((row=streamReader.ReadLine()) != null)
+                while ((row=streamReader.ReadLine()) != null)
                 {
                     PointsOfInterest pointsOfInterest = DataParser(row);
-                    dbHandler.InsertData("PointsOfInterest", pointsOfInterest);
+                    WriteDataToTable(tableName);
                 }
             }
+        }
+
+        public void WriteDataToTable(string tableName)
+        {
+            dbHandler.InsertData(tableName, pointsOfInterest);
         }
 
         public PointsOfInterest DataParser(string row)
@@ -39,11 +44,11 @@ namespace ThingsToDo
             {
                 rowEntry[0] = rowEntry[0].Replace(" ", "");
             }
-            pointsOfInterest.regionId = int.Parse(rowEntry[0]);
+            pointsOfInterest.regionId = long.Parse(rowEntry[0]);
             pointsOfInterest.regionName = rowEntry[1];
             pointsOfInterest.regionNameLong = rowEntry[2];
-            pointsOfInterest.latitude = rowEntry[3];
-            pointsOfInterest.longitude = rowEntry[4];
+            pointsOfInterest.latitude = double.Parse(rowEntry[3]);
+            pointsOfInterest.longitude = double.Parse(rowEntry[4]);
             pointsOfInterest.subClassification = rowEntry[5];
             return pointsOfInterest;
         }
