@@ -1,0 +1,20 @@
+﻿RegionID|RegionName|RegionNameLong|Latitude|Longitude|SubClassification
+704|Barter Island|Barter Island, Alaska, United States of America|70.129562|-143.662949|tree
+916|Carriacou Island|Carriacou Island, Grenada|12.478185|-61.460457|regional
+959|Cayman Brac|Cayman Brac, Cayman Islands|19.717377|-79.812401|
+1116|Tortola|Tortola, British Virgin Islands|18.420341|-64.629417|regional
+1121|Elcho Island|Elcho Island, Elcho Island, Northern Territory, Australia|-11.918650|135.747192|
+1223|Flinders Island|Flinders Island, Tasmania, Australia|-40.007126|148.063507|
+1350|Green Island|Green Island, Lyudao, Taiwan|22.659918|121.491447|regional
+1391|Groote Eylandt|Groote Eylandt, Northern Territory, Australia|-14.021173|136.651520|
+1726|Kilimanjaro|Kilimanjaro, Tanzania|-3.067854|37.328747|tree
+1876|King Island|King Island, Tasmania, Australia|-39.867207|143.983963|
+1919|Kosrae|Kosrae, Kosrae, Federated States of Micronesia|5.314519|162.977127|
+1982|Orchid Island|Orchid Island, Taiwan|22.054001|121.543999|regional
+2039|Sabi Sands Game Reserve|Sabi Sands Game Reserve, Kruger National Park, South Africa|-24.949747|31.528023|regional
+2607|Santo Antao|Santo Antao, Cape Verde|17.061665|-25.175196|regional
+2942|Rarotonga|Rarotonga, Cook Islands|-21.229237|-159.776352|
+3416|Tiga|Tiga, New Caledonia|-21.109501|167.825500|regional
+4338|Lido of Venice|Lido of Venice, Venice, Italy|45.385162|12.351723|neighbor
+4361|Dovedale National Nature Reserve|Dovedale National Nature Reserve, Ashbourne, England, United Kingdom|53.065601|-1.783400|tree
+4365|Forest of Dean|Forest of Dean, England, United Kingdom|51.788338|-2.555265|tree
