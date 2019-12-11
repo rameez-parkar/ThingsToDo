@@ -36,18 +36,21 @@ namespace ThingsToDo
             Console.WriteLine("Disconnected with Database...");
         }
 
-        public void CreateTable(string newTableInfo)
+        public void CreateTable(string tableName, string newTableInfo)
         {
-            command = new MySqlCommand(newTableInfo, connection);
+            command = new MySqlCommand("drop table "+ tableName, connection);
             int noOfRowsAffected = command.ExecuteNonQuery();
+            command = new MySqlCommand(newTableInfo, connection);
+            noOfRowsAffected = command.ExecuteNonQuery();
+            Console.WriteLine("Created Table "+tableName);
         }
 
         public void InsertData(string tableName, PointsOfInterest pointsOfInterest)
         {
-
             string insertCommand = "insert into "+tableName+" values ("+pointsOfInterest.regionId+",\""+pointsOfInterest.regionName+ "\",\"" + pointsOfInterest.regionNameLong+ "\",\"" + pointsOfInterest.latitude+ "\",\"" + pointsOfInterest.longitude+ "\",\"" + pointsOfInterest.subClassification+ "\")";
             command = new MySqlCommand(insertCommand, connection);
             int noOfRowsAffected = command.ExecuteNonQuery();
+            Console.WriteLine("Region ID : "+pointsOfInterest.regionId+" inserted!");
         }
     }
 }
