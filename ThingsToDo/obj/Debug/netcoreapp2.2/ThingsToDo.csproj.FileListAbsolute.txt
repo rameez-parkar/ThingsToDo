@@ -1,0 +1,11 @@
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\bin\Debug\netcoreapp2.2\ThingsToDo.deps.json
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\bin\Debug\netcoreapp2.2\ThingsToDo.runtimeconfig.json
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\bin\Debug\netcoreapp2.2\ThingsToDo.runtimeconfig.dev.json
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\bin\Debug\netcoreapp2.2\ThingsToDo.dll
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\bin\Debug\netcoreapp2.2\ThingsToDo.pdb
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\obj\Debug\netcoreapp2.2\ThingsToDo.csprojAssemblyReference.cache
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\obj\Debug\netcoreapp2.2\ThingsToDo.csproj.CoreCompileInputs.cache
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\obj\Debug\netcoreapp2.2\ThingsToDo.AssemblyInfoInputs.cache
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\obj\Debug\netcoreapp2.2\ThingsToDo.AssemblyInfo.cs
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\obj\Debug\netcoreapp2.2\ThingsToDo.dll
+C:\Users\rparkar\Desktop\ORXe\Training\ThingsToDo\ThingsToDo\obj\Debug\netcoreapp2.2\ThingsToDo.pdb
